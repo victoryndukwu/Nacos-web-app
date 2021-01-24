@@ -1,0 +1,99 @@
+.navbar {
+  background-color:rgb(4, 77, 14);
+  background-color:rgb(6, 122, 22);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 999; 
+  .container {
+    background-color: rgba(5, 56, 16, 0.541);
+    background-color: rgba(237, 241, 239, 0.24);
+    background-color: rgba(250, 9, 9, 0.911);
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar-logo {
+      color: #fff;
+      text-decoration: none;
+    }
+    .menu-icon {
+      color: #fff;
+    }
+    .nav-menu {
+      display: flex; 
+
+      &__item {
+        list-style-type: none;
+        padding: 10px;
+        .nav-link {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+      // media query for screens with maximum width of 960px
+      @media screen and (max-width: 960px) {
+        display: flex;
+        flex-direction: column;
+
+        background-color:yellow;
+        width: 100%;
+        height: 90vh;
+        // position: absolute;
+        // top: 80px;
+        
+      }
+    }
+  }
+}
+
+
+
+
+
+// function Navbar() {
+//   const [Click, setClick] = useState(false);
+//   const [button, setButton] = useState(true);
+//   const handleClick = () => setClick(!Click);
+//   const closeMobileMenu = () => setClick(false);
+//   return (
+//     <>
+//       <div className="navbar">
+//         {/* nav container */}
+//         <div className="navbar-container container">
+//           {/* nacoss logo */}
+//           <Link className="navbar-logo">NACOSS-YCT</Link>
+//           {/* haburger icon */}
+//           <div className="menu-icon" onClick={handleClick}>
+//             {Click ? <FaTimes /> : <FaBars />}
+//           </div>
+//           {/* nav menu */}
+//           <ul className={Click ? "nav-menu active" : "nav-menu"}>
+//             <li className="nav-menu__item">
+//               <Link to="/" className="nav-link">
+//                 Home
+//               </Link>
+//             </li>
+//             <li className="nav-menu__item">
+//               <Link to="/" className="nav-link">
+//                 About
+//               </Link>
+//             </li>
+//             <li className="nav-menu__item">
+//               <Link to="/" className="nav-link">
+//                 Executives
+//               </Link>
+//             </li>
+//           </ul>
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
