@@ -1,6 +1,6 @@
 import React from "react";
 import { AboutSection } from "./About.elements";
-import { Container, SectionHeader } from "../../GlobalStyle";
+import { SectionHeader } from "../../GlobalStyle";
 import { Services } from "../ReusableComponents/Services/Services";
 import MentorshipImg from "../../Illustrations-SVG/SCENE1.svg";
 import VisionImg from "../../Illustrations-SVG/SCENE2.svg";

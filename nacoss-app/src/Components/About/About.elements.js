@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Container, COLORS } from "../../GlobalStyle";
+// import { Container, COLORS } from "../../GlobalStyle";
 
 export const AboutSection = styled.section`
   display: flex;
